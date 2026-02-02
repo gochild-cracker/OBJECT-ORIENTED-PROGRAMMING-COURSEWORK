@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package vic.inc.coursework;
 
 import java.text.DecimalFormat;
@@ -9,41 +5,27 @@ import java.util.Scanner;
 
 /**
  *
- * @author Heifer
+ * @author victor
  */
 public class skmotors {
-    public static void main (String[] args){;
+    public static void main (String[] args){
      Scanner input = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("#,##0.00");
 
         System.out.println("===== SK MOTORS AUCTION SYSTEM =====\n");
 
         // Vehicle details 
-        System.out.println("Select Vehicle Registration Number:");
-        System.out.println("1) 123K");
-        System.out.println("2) 567K");
-        System.out.println("3) 890K");
-        System.out.print("Enter choice (1-3): ");
-        int choice = input.nextInt();
-        input.nextLine(); // clear buffer
+     System.out.print("Enter Vehicle Registration Number: ");
+String regNo = input.nextLine();
 
-        String regNo;
-        if (choice == 1) {
-            regNo = "123K";
-        } else if (choice == 2) {
-            regNo = "567K";
-        } else if (choice == 3) {
-            regNo = "890K";
-        } else {
-            regNo = "123K"; // default
-            System.out.println("Invalid choice! Default selected: 123K");
-        }
+System.out.print("Enter Vehicle Cost: ");
+double vehicleCost = input.nextDouble();
 
-        System.out.print("Enter Vehicle Cost: ");
-        double vehicleCost = input.nextDouble();
+System.out.print("Enter Balance Left on the Vehicle: ");
+double balanceLeft = input.nextDouble();
 
-        System.out.print("Enter Balance Left on the Vehicle: ");
-        double balanceLeft = input.nextDouble();
+
+    
 
         // Deposits
         System.out.print("\nEnter number of deposits: ");
@@ -127,3 +109,4 @@ public class skmotors {
 
     
 }
+
